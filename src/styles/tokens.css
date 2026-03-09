@@ -1,0 +1,54 @@
+/* =============================================================
+   DESIGN TOKENS  —  styles/tokens.css
+   Single source of truth for all visual variables.
+   Consumed by Tailwind (tailwind.config.js) and raw CSS.
+   ============================================================= */
+
+:root {
+  /* ── Backgrounds ─────────────────────────────────────────── */
+  --color-bg-primary:  #07090e;
+  --color-bg-surface:  #0d1017;
+  --color-bg-elevated: #141a23;
+  --color-bg-hover:    #1a2232;
+
+  /* ── Borders ─────────────────────────────────────────────── */
+  --color-border:        #1c2636;
+  --color-border-bright: #293d52;
+
+  /* ── Text ────────────────────────────────────────────────── */
+  --color-text-primary:   #dce8f0;
+  --color-text-secondary: #6e8599;
+  --color-text-muted:     #354c5e;
+
+  /* ── Accent ──────────────────────────────────────────────── */
+  --color-accent-amber:     #f0a500;
+  --color-accent-amber-dim: rgba(240, 165, 0, 0.12);
+  --color-accent-cyan:      #00c9c0;
+  --color-accent-cyan-dim:  rgba(0, 201, 192, 0.12);
+
+  /* ── Status ──────────────────────────────────────────────── */
+  --color-status-healthy:  #00d46a;
+  --color-status-warning:  #ffb700;
+  --color-status-critical: #ff3b5c;
+  --color-status-unknown:  #5a6a78;
+
+  /* ── Typography — responsive via clamp() ─────────────────── */
+  --font-size-2xs: clamp(0.55rem, 0.5rem  + 0.2vw,  0.65rem);
+  --font-size-xs:  clamp(0.65rem, 0.6rem  + 0.25vw, 0.75rem);
+  --font-size-sm:  clamp(0.75rem, 0.7rem  + 0.25vw, 0.85rem);
+  --font-size-md:  clamp(0.85rem, 0.8rem  + 0.3vw,  1rem);
+  --font-size-lg:  clamp(1rem,    0.9rem  + 0.5vw,  1.3rem);
+  --font-size-xl:  clamp(1.2rem,  1rem    + 1vw,    1.8rem);
+  --font-size-2xl: clamp(1.5rem,  1.2rem  + 1.5vw,  2.6rem);
+
+  /* ── Shadows ─────────────────────────────────────────────── */
+  --shadow-sm:         0 1px 4px  rgba(0, 0, 0, 0.55);
+  --shadow-md:         0 4px 16px rgba(0, 0, 0, 0.65);
+  --shadow-amber-glow: 0 0 0 1px var(--color-border), 0 0 18px rgba(240, 165, 0, 0.18);
+  --shadow-cyan-glow:  0 0 0 1px var(--color-border), 0 0 18px rgba(0, 201, 192, 0.18);
+
+  /* ── Transitions ─────────────────────────────────────────── */
+  --transition-fast:   120ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-base:   240ms cubic-bezier(0.16, 1, 0.3, 1);
+  --transition-slow:   450ms cubic-bezier(0.16, 1, 0.3, 1);
+}
